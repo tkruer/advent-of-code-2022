@@ -27,6 +27,7 @@ def get_max_calories(calories_list: list[str]) -> int:
 
 print(get_max_calories(parse_calories(inpt)))
 
+
 def get_top_calories(calories_list: list[str]) -> list[int]:
     elve_calories = []
     for calories_str in calories_list:
