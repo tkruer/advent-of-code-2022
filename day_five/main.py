@@ -1,10 +1,8 @@
 from os import path
 import re
 
-
 def ints(string):
     return list(map(int, re.findall(r"-?[0-9]+", string)))
-
 
 with open(path.join(path.dirname(__file__), "input.txt")) as f:
     lines = iter(f.read().splitlines())
@@ -32,3 +30,4 @@ with open(path.join(path.dirname(__file__), "input.txt")) as f:
 
     print("Part 1:", "".join(s[-1] for s in stacks[1:]))
     print("Part 2:", "".join(s[-1] for s in stacks2[1:]))
+
